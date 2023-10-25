@@ -15,7 +15,7 @@ jobs:
 
       - name: Update Status
         run: |
-          ACCESS_TOKEN="${{ secrets.ACCESS }}"
+          ACCESS_TOKEN="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"
           WORKFLOW_ID="${{ github.run_id }}"
           REPO_OWNER="${{ github.repository_owner }}"
           REPO_NAME="${{ github.repository }}"
