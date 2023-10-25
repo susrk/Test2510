@@ -22,7 +22,7 @@ jobs:
           
           GRAPHQL_API_URL="https://api.github.com/graphql"
           
-          curl -http2 -H "Authorization: bearer $ACCESS_TOKEN" -d \
+          curl -http2 POST -H "Authorization: bearer $ACCESS_TOKEN" -d \
             "{
               \"query\": \"mutation {
                 updateSubscription(input: {clientMutationId: \\\"1\\\", state: \"IN_PROGRESS\"}) {
